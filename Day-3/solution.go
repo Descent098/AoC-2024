@@ -28,8 +28,7 @@ func part1(input string) int {
 
 	var re = regexp.MustCompile(`(?m)mul\((\d{1,3})\,(\d{1,3})\)`)
 
-	for i, match := range re.FindAllString(input, -1) {
-		fmt.Println(match, "found at index", i)
+	for _, match := range re.FindAllString(input, -1) {
 		temp := strings.Split(match[4:len(match)-1], ",")
 		leftOperator, err := strconv.Atoi(temp[0])
 		if err != nil {
@@ -51,8 +50,7 @@ func part2(input string) int {
 
 	var re = regexp.MustCompile(`(?m)mul\((\d{1,3})\,(\d{1,3})\)|do\(\)|don\'t\(\)`)
 
-	for i, match := range re.FindAllString(input, -1) {
-		fmt.Println(match, "found at index", i)
+	for _, match := range re.FindAllString(input, -1) {
 		if match == "do()" {
 			do = true
 		} else if match == "don't()" {
