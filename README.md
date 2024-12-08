@@ -6,6 +6,8 @@ For this year I'm learning golang and PHP, so I'm going to attempt my first try 
 
 If I get completely stuck I will then try it in python "first"
 
+Goddamn, this year ramped up fast. I gave up at day 3, I just don't have time to do the challenges this year.
+
 ## Insights
 
 What I learned about each language as I went
@@ -27,7 +29,7 @@ sort.Slice(myslice, func(i, j int) bool {
 
 ### Python
 
-...
+- I've found myself more reliably completeing days in golang than python. Not sure If I'm just out of practice, or the static typing is helping me avoid parsing problems I'm too dumb to see in python
 
 ### PHP
 
